@@ -1,0 +1,5 @@
+<apex:page standardController="Account" extensions="DogFinderCons" action="{!findaDog}">
+<apex:form >
+<apex:inputHidden value="{!account.OwnerId}"/>
+</apex:form>
+</apex:page>
