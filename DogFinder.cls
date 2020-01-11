@@ -18,9 +18,9 @@ if (response.getStatusCode() == 200) {
     petName = strResp.substringBetween('/breeds/','/');
     System.debug('My new pet is called ' + petName);
 }
-	Pet__c newPet = new Pet__c(Name = 'Our new '+ petName, Household__c = Id, Image_URL__c = strResp);
-		Insert newPet;
+    Pet__c newPet = new Pet__c(Name = 'Our new '+ petName, Account__c = Id, Image_URL__c = strResp);
+        Insert newPet;
 
-	return strResp;        
+    return strResp;        
     }
 }
